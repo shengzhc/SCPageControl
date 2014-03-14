@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C74046D18D22A4200D464C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C74046C18D22A4200D464C0 /* Foundation.framework */; };
+		9C74046F18D22A4200D464C0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C74046E18D22A4200D464C0 /* CoreGraphics.framework */; };
+		9C74047118D22A4200D464C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C74047018D22A4200D464C0 /* UIKit.framework */; };
+		9C74047718D22A4200D464C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C74047518D22A4200D464C0 /* InfoPlist.strings */; };
+		9C74047918D22A4200D464C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C74047818D22A4200D464C0 /* main.m */; };
+		9C74047D18D22A4200D464C0 /* SCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C74047C18D22A4200D464C0 /* SCAppDelegate.m */; };
+		9C74048018D22A4200D464C0 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C74047E18D22A4200D464C0 /* Main_iPhone.storyboard */; };
+		9C74048318D22A4200D464C0 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C74048118D22A4200D464C0 /* Main_iPad.storyboard */; };
+		9C74048618D22A4200D464C0 /* SCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C74048518D22A4200D464C0 /* SCViewController.m */; };
+		9C74048818D22A4200D464C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C74048718D22A4200D464C0 /* Images.xcassets */; };
+		9C74048F18D22A4200D464C0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C74048E18D22A4200D464C0 /* XCTest.framework */; };
+		9C74049018D22A4200D464C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C74046C18D22A4200D464C0 /* Foundation.framework */; };
+		9C74049118D22A4200D464C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C74047018D22A4200D464C0 /* UIKit.framework */; };
+		9C74049918D22A4200D464C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C74049718D22A4200D464C0 /* InfoPlist.strings */; };
+		9C74049B18D22A4200D464C0 /* SCPageControlDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C74049A18D22A4200D464C0 /* SCPageControlDemoTests.m */; };
+		9C7404A718D22A9D00D464C0 /* SCPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7404A618D22A9D00D464C0 /* SCPageControl.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C74049218D22A4200D464C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C74046118D22A4200D464C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C74046818D22A4200D464C0;
+			remoteInfo = SCPageControlDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C74046918D22A4200D464C0 /* SCPageControlDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCPageControlDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C74046C18D22A4200D464C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9C74046E18D22A4200D464C0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9C74047018D22A4200D464C0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9C74047418D22A4200D464C0 /* SCPageControlDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SCPageControlDemo-Info.plist"; sourceTree = "<group>"; };
+		9C74047618D22A4200D464C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9C74047818D22A4200D464C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C74047A18D22A4200D464C0 /* SCPageControlDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCPageControlDemo-Prefix.pch"; sourceTree = "<group>"; };
+		9C74047B18D22A4200D464C0 /* SCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAppDelegate.h; sourceTree = "<group>"; };
+		9C74047C18D22A4200D464C0 /* SCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAppDelegate.m; sourceTree = "<group>"; };
+		9C74047F18D22A4200D464C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		9C74048218D22A4200D464C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		9C74048418D22A4200D464C0 /* SCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCViewController.h; sourceTree = "<group>"; };
+		9C74048518D22A4200D464C0 /* SCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCViewController.m; sourceTree = "<group>"; };
+		9C74048718D22A4200D464C0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9C74048D18D22A4200D464C0 /* SCPageControlDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCPageControlDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C74048E18D22A4200D464C0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9C74049618D22A4200D464C0 /* SCPageControlDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SCPageControlDemoTests-Info.plist"; sourceTree = "<group>"; };
+		9C74049818D22A4200D464C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9C74049A18D22A4200D464C0 /* SCPageControlDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPageControlDemoTests.m; sourceTree = "<group>"; };
+		9C7404A518D22A9D00D464C0 /* SCPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPageControl.h; sourceTree = "<group>"; };
+		9C7404A618D22A9D00D464C0 /* SCPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPageControl.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C74046618D22A4200D464C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C74046F18D22A4200D464C0 /* CoreGraphics.framework in Frameworks */,
+				9C74047118D22A4200D464C0 /* UIKit.framework in Frameworks */,
+				9C74046D18D22A4200D464C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C74048A18D22A4200D464C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C74048F18D22A4200D464C0 /* XCTest.framework in Frameworks */,
+				9C74049118D22A4200D464C0 /* UIKit.framework in Frameworks */,
+				9C74049018D22A4200D464C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C74046018D22A4200D464C0 = {
+			isa = PBXGroup;
+			children = (
+				9C7404A418D22A6000D464C0 /* SCPageControl */,
+				9C74047218D22A4200D464C0 /* SCPageControlDemo */,
+				9C74049418D22A4200D464C0 /* SCPageControlDemoTests */,
+				9C74046B18D22A4200D464C0 /* Frameworks */,
+				9C74046A18D22A4200D464C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C74046A18D22A4200D464C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C74046918D22A4200D464C0 /* SCPageControlDemo.app */,
+				9C74048D18D22A4200D464C0 /* SCPageControlDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C74046B18D22A4200D464C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C74046C18D22A4200D464C0 /* Foundation.framework */,
+				9C74046E18D22A4200D464C0 /* CoreGraphics.framework */,
+				9C74047018D22A4200D464C0 /* UIKit.framework */,
+				9C74048E18D22A4200D464C0 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C74047218D22A4200D464C0 /* SCPageControlDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9C74047B18D22A4200D464C0 /* SCAppDelegate.h */,
+				9C74047C18D22A4200D464C0 /* SCAppDelegate.m */,
+				9C74047E18D22A4200D464C0 /* Main_iPhone.storyboard */,
+				9C74048118D22A4200D464C0 /* Main_iPad.storyboard */,
+				9C74048418D22A4200D464C0 /* SCViewController.h */,
+				9C74048518D22A4200D464C0 /* SCViewController.m */,
+				9C74048718D22A4200D464C0 /* Images.xcassets */,
+				9C74047318D22A4200D464C0 /* Supporting Files */,
+			);
+			path = SCPageControlDemo;
+			sourceTree = "<group>";
+		};
+		9C74047318D22A4200D464C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C74047418D22A4200D464C0 /* SCPageControlDemo-Info.plist */,
+				9C74047518D22A4200D464C0 /* InfoPlist.strings */,
+				9C74047818D22A4200D464C0 /* main.m */,
+				9C74047A18D22A4200D464C0 /* SCPageControlDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C74049418D22A4200D464C0 /* SCPageControlDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C74049A18D22A4200D464C0 /* SCPageControlDemoTests.m */,
+				9C74049518D22A4200D464C0 /* Supporting Files */,
+			);
+			path = SCPageControlDemoTests;
+			sourceTree = "<group>";
+		};
+		9C74049518D22A4200D464C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C74049618D22A4200D464C0 /* SCPageControlDemoTests-Info.plist */,
+				9C74049718D22A4200D464C0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C7404A418D22A6000D464C0 /* SCPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				9C7404A518D22A9D00D464C0 /* SCPageControl.h */,
+				9C7404A618D22A9D00D464C0 /* SCPageControl.m */,
+			);
+			name = SCPageControl;
+			path = ../SCPageControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C74046818D22A4200D464C0 /* SCPageControlDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C74049E18D22A4200D464C0 /* Build configuration list for PBXNativeTarget "SCPageControlDemo" */;
+			buildPhases = (
+				9C74046518D22A4200D464C0 /* Sources */,
+				9C74046618D22A4200D464C0 /* Frameworks */,
+				9C74046718D22A4200D464C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCPageControlDemo;
+			productName = SCPageControlDemo;
+			productReference = 9C74046918D22A4200D464C0 /* SCPageControlDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C74048C18D22A4200D464C0 /* SCPageControlDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C7404A118D22A4200D464C0 /* Build configuration list for PBXNativeTarget "SCPageControlDemoTests" */;
+			buildPhases = (
+				9C74048918D22A4200D464C0 /* Sources */,
+				9C74048A18D22A4200D464C0 /* Frameworks */,
+				9C74048B18D22A4200D464C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C74049318D22A4200D464C0 /* PBXTargetDependency */,
+			);
+			name = SCPageControlDemoTests;
+			productName = SCPageControlDemoTests;
+			productReference = 9C74048D18D22A4200D464C0 /* SCPageControlDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C74046118D22A4200D464C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Shengzhe Chen";
+				TargetAttributes = {
+					9C74048C18D22A4200D464C0 = {
+						TestTargetID = 9C74046818D22A4200D464C0;
+					};
+				};
+			};
+			buildConfigurationList = 9C74046418D22A4200D464C0 /* Build configuration list for PBXProject "SCPageControlDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C74046018D22A4200D464C0;
+			productRefGroup = 9C74046A18D22A4200D464C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C74046818D22A4200D464C0 /* SCPageControlDemo */,
+				9C74048C18D22A4200D464C0 /* SCPageControlDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C74046718D22A4200D464C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C74048318D22A4200D464C0 /* Main_iPad.storyboard in Resources */,
+				9C74048818D22A4200D464C0 /* Images.xcassets in Resources */,
+				9C74048018D22A4200D464C0 /* Main_iPhone.storyboard in Resources */,
+				9C74047718D22A4200D464C0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C74048B18D22A4200D464C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C74049918D22A4200D464C0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C74046518D22A4200D464C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C74047D18D22A4200D464C0 /* SCAppDelegate.m in Sources */,
+				9C74048618D22A4200D464C0 /* SCViewController.m in Sources */,
+				9C7404A718D22A9D00D464C0 /* SCPageControl.m in Sources */,
+				9C74047918D22A4200D464C0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C74048918D22A4200D464C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C74049B18D22A4200D464C0 /* SCPageControlDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C74049318D22A4200D464C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C74046818D22A4200D464C0 /* SCPageControlDemo */;
+			targetProxy = 9C74049218D22A4200D464C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C74047518D22A4200D464C0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C74047618D22A4200D464C0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9C74047E18D22A4200D464C0 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C74047F18D22A4200D464C0 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		9C74048118D22A4200D464C0 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C74048218D22A4200D464C0 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		9C74049718D22A4200D464C0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C74049818D22A4200D464C0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C74049C18D22A4200D464C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9C74049D18D22A4200D464C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C74049F18D22A4200D464C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SCPageControlDemo/SCPageControlDemo-Prefix.pch";
+				INFOPLIST_FILE = "SCPageControlDemo/SCPageControlDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9C7404A018D22A4200D464C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SCPageControlDemo/SCPageControlDemo-Prefix.pch";
+				INFOPLIST_FILE = "SCPageControlDemo/SCPageControlDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9C7404A218D22A4200D464C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SCPageControlDemo.app/SCPageControlDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SCPageControlDemo/SCPageControlDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SCPageControlDemoTests/SCPageControlDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9C7404A318D22A4200D464C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SCPageControlDemo.app/SCPageControlDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SCPageControlDemo/SCPageControlDemo-Prefix.pch";
+				INFOPLIST_FILE = "SCPageControlDemoTests/SCPageControlDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C74046418D22A4200D464C0 /* Build configuration list for PBXProject "SCPageControlDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C74049C18D22A4200D464C0 /* Debug */,
+				9C74049D18D22A4200D464C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C74049E18D22A4200D464C0 /* Build configuration list for PBXNativeTarget "SCPageControlDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C74049F18D22A4200D464C0 /* Debug */,
+				9C7404A018D22A4200D464C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9C7404A118D22A4200D464C0 /* Build configuration list for PBXNativeTarget "SCPageControlDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C7404A218D22A4200D464C0 /* Debug */,
+				9C7404A318D22A4200D464C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C74046118D22A4200D464C0 /* Project object */;
+}

@@ -8,12 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+@class SCPageControl;
+
+@protocol SCPageControlDelegate <NSObject>
+@optional
+- (void)pageControlDidPageIndexChanged:(SCPageControl *)control;
+
+@end
+
 @interface SCPageControl : UIView
 
 @property (nonatomic, assign) NSUInteger numberOfPages;
 @property (nonatomic, assign) NSUInteger currentPageIndex;
+@property (nonatomic, weak) id < SCPageControlDelegate > delegate;
 
 - (void)refresh;
 - (void)setCurrentPageIndex:(NSUInteger)currentPageIndex animated:(BOOL)animated;
+- (void)setCurrentPageIndex:(NSUInteger)currentPageIndex;
 
 @end

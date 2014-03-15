@@ -132,7 +132,7 @@ const float highlightAlpha = 1.0f;
 
 - (void)_initialize
 {
-    _numberOfPages = 20;
+    _numberOfPages = 10;
     _layout = [[SCCollectionViewLayout alloc] init];
     _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:[[SCCollectionViewLayout alloc] init]];
     [_collectionView registerClass:[SCCollectionViewCell class] forCellWithReuseIdentifier:cellIdentifier];
@@ -176,19 +176,30 @@ const float highlightAlpha = 1.0f;
     UICollectionViewLayoutAttributes *previousAttributes = [_collectionView.collectionViewLayout layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:_previousPageIndex inSection:0]];
     UICollectionViewLayoutAttributes *currentAttributes = [_collectionView.collectionViewLayout layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:_currentPageIndex inSection:0]];
     
+    void (^reload)(void) = ^{
+        [UIView setAnimationsEnabled:animated];
+        [_collectionView performBatchUpdates:^{
+            [_collectionView reloadItemsAtIndexPaths:@[[NSIndexPath indexPathForItem:_currentPageIndex inSection:0], [NSIndexPath indexPathForItem:_previousPageIndex inSection:0]]];
+        } completion:^(BOOL finished) {
+            [UIView setAnimationsEnabled:YES];
+            if ([self.delegate conformsToProtocol:@protocol(SCPageControlDelegate)] && [self.delegate respondsToSelector:@selector(pageControlDidPageIndexChanged:)]) {
+                [self.delegate pageControlDidPageIndexChanged:self];
+            }
+        }];
+    };
+    
     void (^shift)(void) = ^{
         CGPoint offset = CGPointMake(CGRectGetMidX(currentAttributes.frame) - _collectionView.bounds.size.width/2.0f, 0);
         [_collectionView setContentOffset:offset animated:animated];
         previousAttributes.alpha = defaultAlpha;
         currentAttributes.alpha = highlightAlpha;
-        [_collectionView reloadItemsAtIndexPaths:@[[NSIndexPath indexPathForItem:_currentPageIndex inSection:0], [NSIndexPath indexPathForItem:_previousPageIndex inSection:0]]];
+        reload();
     };
     
     void (^move)(void) = ^{
-        NSLog(@"Move");
         previousAttributes.alpha = defaultAlpha;
         currentAttributes.alpha = highlightAlpha;
-        [_collectionView reloadItemsAtIndexPaths:@[[NSIndexPath indexPathForItem:_currentPageIndex inSection:0], [NSIndexPath indexPathForItem:_previousPageIndex inSection:0]]];
+        reload();
     };
 
     if (direction) {

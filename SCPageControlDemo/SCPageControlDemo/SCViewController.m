@@ -9,7 +9,7 @@
 #import "SCViewController.h"
 #import "SCPageControl.h"
 
-@interface SCViewController ()
+@interface SCViewController () < SCPageControlDelegate >
 
 @property (nonatomic, strong) SCPageControl *page;
 
@@ -22,6 +22,7 @@
     [super viewDidLoad];
     self.page = [[SCPageControl alloc] initWithFrame:CGRectMake(0, 50, 320, 30)];
     self.page.numberOfPages = 20;
+    self.page.delegate = self;
     [self.view addSubview:self.page];
     [NSTimer scheduledTimerWithTimeInterval:.5 target:self selector:@selector(update:) userInfo:nil repeats:YES];
 }
@@ -37,6 +38,11 @@
         left = YES;
     }
     self.page.currentPageIndex = pageIndex;
+}
+
+- (void)pageControlDidPageIndexChanged:(SCPageControl *)control
+{
+    NSLog(@"%@", NSStringFromSelector(_cmd));
 }
 
 - (void)didReceiveMemoryWarning
